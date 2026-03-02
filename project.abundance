@@ -114,6 +114,10 @@
         {
           "name": "Shape 1",
           "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
         }
       ]
     },
@@ -1264,8 +1268,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.10093299406276506,
-      "y": 0.8491228070175438,
+      "x": 0.043256997455470736,
+      "y": 0.8362573099415205,
       "uniqueID": "id-45554",
       "name": "Stand off",
       "topLevel": false,
@@ -1436,8 +1440,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6675148430873622,
-      "y": 0.8830409356725144,
+      "x": 0.6624257845631891,
+      "y": 0.886549707602339,
       "uniqueID": "id-45719",
       "name": "Linear-Pattern",
       "ioValues": [
@@ -1689,8 +1693,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.34011874469889736,
-      "y": 0.783625730994152,
+      "x": 0.2765055131467345,
+      "y": 0.7146198830409357,
       "uniqueID": "id-45753",
       "ioValues": [
         {
@@ -1699,17 +1703,61 @@
         },
         {
           "name": "xDist",
+          "ioValue": -200
+        },
+        {
+          "name": "yDist",
           "ioValue": -75,
           "currentEquation": "-75"
         },
         {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.27989821882951654,
+      "y": 0.9239766081871346,
+      "uniqueID": "id-45759",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -200
+        },
+        {
           "name": "yDist",
-          "ioValue": -200,
-          "currentEquation": "-200"
+          "ioValue": 75,
+          "currentEquation": "75"
         },
         {
           "name": "zDist",
           "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.4749787955894825,
+      "y": 0.7988304093567251,
+      "uniqueID": "id-45765",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
         }
       ]
     }
@@ -1746,8 +1794,33 @@
       "ap2ID": "id-45753"
     },
     {
-      "ap2Name": "Geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-45554",
+      "ap2ID": "id-45759"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-45719",
+      "ap2ID": "id-45472"
+    },
+    {
+      "ap2Name": "Shape 2",
       "ap1ID": "id-45753",
+      "ap2ID": "id-45765"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-45753",
+      "ap2ID": "id-45765"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-45759",
+      "ap2ID": "id-45765"
+    },
+    {
+      "ap2Name": "Geometry",
+      "ap1ID": "id-45765",
       "ap2ID": "id-45719"
     }
   ],
